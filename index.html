@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VCF Maker by Ulya</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="logo">
+📇
+<h1>VCF Maker</h1>
+<p>by Ulya</p>
+</div>
+
+<h2>Konversi Excel & CSV menjadi VCF</h2>
+
+<input
+type="file"
+id="fileInput"
+accept=".xlsx,.xls,.csv">
+
+<label>
+
+<input type="checkbox" id="convert628" checked>
+
+Ubah nomor 08 menjadi 628
+
+</label>
+
+<label>
+
+<input type="checkbox" id="removeDuplicate" checked>
+
+Hapus nomor duplikat
+
+</label>
+
+<input
+type="text"
+id="prefix"
+placeholder="Contoh : SBM | ">
+
+<p>
+
+Total Kontak :
+<span id="totalKontak">0</span>
+
+</p>
+
+<button id="generateBtn">
+
+🚀 Generate VCF
+
+</button>
+
+<a
+id="downloadLink"
+style="display:none">
+
+Download VCF
+
+</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
